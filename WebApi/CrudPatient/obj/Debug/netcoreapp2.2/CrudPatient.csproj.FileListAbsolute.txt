@@ -1,0 +1,14 @@
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\bin\Debug\netcoreapp2.2\CrudPatient.deps.json
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\bin\Debug\netcoreapp2.2\CrudPatient.runtimeconfig.json
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\bin\Debug\netcoreapp2.2\CrudPatient.runtimeconfig.dev.json
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\bin\Debug\netcoreapp2.2\CrudPatient.dll
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.csproj.CoreCompileInputs.cache
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.RazorAssemblyInfo.cache
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.RazorAssemblyInfo.cs
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.AssemblyInfoInputs.cache
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.AssemblyInfo.cs
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.RazorTargetAssemblyInfo.cache
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\bin\Debug\netcoreapp2.2\CrudPatient.pdb
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.dll
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.pdb
+C:\Users\anis\source\repos\CrudPatient\CrudPatient\obj\Debug\netcoreapp2.2\CrudPatient.csprojAssemblyReference.cache

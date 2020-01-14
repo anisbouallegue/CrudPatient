@@ -1,0 +1,81 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="Id" [value]="service.formData.Id" >
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user" [class.green-icon]="Nom.valid" [class.red-icon]="Nom.invalid && Nom.touched"></i>
+
+                </div>
+            </div>
+            <input name="Nom" #Nom="ngModel" [(ngModel)]="service.formData.Nom" class="form-control" placeholder="Nom" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-user" [class.green-icon]="Prenom.valid" [class.red-icon]="Prenom.invalid && Prenom.touched"></i>
+                </div>
+            </div>
+            <input name="Prenom" #Prenom="ngModel" [(ngModel)]="service.formData.Prenom" class="form-control" placeholder="Prenom" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-phone" [class.green-icon]="NumTel.valid" [class.red-icon]="NumTel.invalid && NumTelouched"></i>
+                </div>
+            </div>
+            <input  name="NumTel" #NumTel="ngModel" [(ngModel)]="service.formData.NumTel" (keypress)="keyPress($event)" class="form-control" placeholder="Numéro Telephone" required minlength=8 maxlength=8>
+           
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-map-marker" [class.green-icon]="Address.valid" [class.red-icon]="Address.invalid && Address.touched"></i>
+                </div>
+            </div>
+            <input name="Address" #Address="ngModel" [(ngModel)]="service.formData.Address" class="form-control" placeholder="Address" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="far fa-calendar-alt" [class.green-icon]="BirthDay.valid" [class.red-icon]="BirthDay.invalid && BirthDay.touched"></i>
+                </div>
+            </div>
+            <input name="BirthDay" #BirthDay="ngModel" [(ngModel)]="service.formData.BirthDay" class="form-control" placeholder="DD/MM/YYYY" required >
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="materialchecked" name="materialExampleRadios"
+                        name="IsActive"  #IsActive="ngModel"   [(ngModel)]="service.formData.IsActive" [value]="checked" mdbInput>
+                        <label class="custom-control-label" for="materialchecked">Activer</label>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+           
+              
+       
+    <div class="form-group">
+        <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
+    </div>
+</form>

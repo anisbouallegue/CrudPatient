@@ -1,0 +1,26 @@
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Numéro Telephone</th>
+      <th scope="col">Address</th>
+      <th scope="col">BirthDay</th>
+      <th scope="col">IsActive</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pd of service.list">
+      <td (click)="populateForm(pd)">{{pd.Nom}}</td>
+      <td (click)="populateForm(pd)">{{pd.Prenom}}</td>
+      <td (click)="populateForm(pd)">{{pd.NumTel}}</td>
+      <td (click)="populateForm(pd)">{{pd.Address}}</td>
+      <td (click)="populateForm(pd)">{{pd.BirthDay}}</td>
+      <td (click)="populateForm(pd)">{{pd.IsActive}}</td>
+      <td>
+        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.Id)"></i>
+      </td>
+    </tr>
+  </tbody>
+  </table>
